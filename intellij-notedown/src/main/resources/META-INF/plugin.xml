@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>com.github.thepyprogrammer.intellijnotedown</id>
+    <name>intellij-notedown</name>
+    <vendor>thepyprogrammer</vendor>
+
+    <!-- Product and plugin compatibility requirements -->
+    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.github.thepyprogrammer.intellijnotedown.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.thepyprogrammer.intellijnotedown.services.MyProjectService"/>
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.github.thepyprogrammer.intellijnotedown.listeners.MyProjectManagerListener"
+                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+    </applicationListeners>
+</idea-plugin>
