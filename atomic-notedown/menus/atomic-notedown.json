@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atomic-notedown",
+        "command": "atomic-notedown:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atomic-notedown",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atomic-notedown:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
