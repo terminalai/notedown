@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "notedown",
+  "description": "notedown settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
